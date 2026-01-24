@@ -268,3 +268,6 @@
 {"level":"info","message":"::1 - - [22/Jan/2026:17:44:18 +0000] \"GET / HTTP/1.1\" 200 25 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquistions api","timestamp":"2026-01-22T17:44:18.820Z"}
 {"level":"info","message":"Hello from Acquistions!","service":"acquistions api","timestamp":"2026-01-22T17:44:20.582Z"}
 {"level":"info","message":"::1 - - [22/Jan/2026:17:44:20 +0000] \"GET / HTTP/1.1\" 200 25 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquistions api","timestamp":"2026-01-22T17:44:20.584Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Jan/2026:13:07:24 +0000] \"GET /health HTTP/1.1\" 200 105 \"-\" \"-\"","service":"acquistions api","timestamp":"2026-01-24T13:07:24.283Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Jan/2026:13:07:24 +0000] \"GET /api HTTP/1.1\" 200 39 \"-\" \"-\"","service":"acquistions api","timestamp":"2026-01-24T13:07:24.297Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [24/Jan/2026:13:07:24 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquistions api","timestamp":"2026-01-24T13:07:24.305Z"}
