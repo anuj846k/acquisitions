@@ -17,7 +17,7 @@ const securityMiddleware = async (req, res, next) => {
         break;
       case 'guest':
         limit = 5;
-        break;  
+        break;
     }
 
     const client = aj.withRule(
