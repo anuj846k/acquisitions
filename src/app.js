@@ -4,8 +4,9 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-
+import { optionalAuthenticate } from '#middleware/auth.middleware.js';
 import authRoutes from '#routes/auth.routes.js';
+import userRoutes from '#routes/user.routes.js';
 import securityMiddleware from '#middleware/security.middleware.js';
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(optionalAuthenticate);
 
 app.use(
   morgan('combined', {
@@ -43,5 +45,6 @@ app.get('/api', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 
 export default app;
